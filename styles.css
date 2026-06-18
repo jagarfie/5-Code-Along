@@ -84,19 +84,22 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Restored card layout */
 .card-row {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
-    flex-wrap: wrap;
+    margin: 1rem 0;
 }
 
-.card-row section {
+.card {
+    flex: 1;
     background-color: white;
     border: 1px solid #E5E5E5;
     padding: 1rem;
-    width: 30%;
-    box-sizing: border-box;
+    min-width: 250px;
+}
+.card section {
+    margin-bottom: 0;
 }
 
 img {
@@ -130,12 +133,5 @@ footer {
     .card-row {
         display: flex;
         gap: 1rem;
-    }
-
-    .card-row section {
-        background-color: white;
-        border: 1px solid #E5E5E5;
-        padding: 1rem;
-        width: 30%;
     }
 }
